@@ -1,13 +1,11 @@
 {
-  "name": "nodejs-app",
+  "name": "hosting-demo",
   "version": "1.0.0",
-  "description": "A Hello world Node.js web application.",
-  "main": "script.js",
-  "author": "Beaudelaire",
-  "license": "MIT",
   "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2"
   },
   "scripts": {
-    "start": "node script.js"
+    "start": "node server.js"
   }
 }
