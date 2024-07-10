@@ -9,10 +9,8 @@ app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.post('/submit', (req, res) => {
-    console.log(req.body)
-    const username = req.body.username;
-    console.log(`Received username: ${username}`);
-    res.send(`Welcome ${username}!`);
+    console.log('Got body:', req.body);
+    res.send(`Received your request! Name: ${req.body.username}`);
 });
 
 app.listen(port, () => {
